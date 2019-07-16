@@ -8,6 +8,7 @@ import java.util.Map;
  */
 public class Food {
     public List<Spice> getAllSpices() {
+
         return null;
     }
 

@@ -5,6 +5,7 @@ package rocks.zipcode.quiz4.objectorientation.account;
  */
 public class Bank {
     public BankAccount removeBankAccountByIndex(Integer indexNumber) {
+
         return null;
     }
 
@@ -13,5 +14,7 @@ public class Bank {
 
     public Boolean containsBankAccount(BankAccount bankAccount) {
         throw new UnsupportedOperationException("Method not yet implemented");
+
+
     }
 }
