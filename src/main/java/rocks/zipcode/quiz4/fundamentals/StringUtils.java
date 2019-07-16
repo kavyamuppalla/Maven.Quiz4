@@ -26,9 +26,9 @@ public class StringUtils {
 
     }
 
-    public static String lowerCaseMiddleCharacter(String string) {
-        /*int  pos;
-        int  length;
+    public static String lowerCaseMiddleCharacter(String str) {
+        int  pos=0;
+        int  length=0;
         if(str.length() % 2 == 0) {
             pos = str.length() / 2 - 1;
             length = 2;
@@ -37,11 +37,11 @@ public class StringUtils {
             pos = str.length() / 2;
             length = 1;
         }
-        return str.substring(pos, pos + length).toLowerCase();*/
+        //str.substring(pos, pos + length);
+        return str.substring(0,pos)+(str.substring(pos,pos+ length).toLowerCase()+str.substring(pos + 1,str.length()));
 
 
 
-        return Character.toLowerCase(string.charAt(string.length()/2)) + string.substring(string.length()/2 + 1,1);
     }
 
     public static Boolean isIsogram(String str) {
