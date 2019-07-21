@@ -12,35 +12,16 @@ public class StringUtils {
     }
 
     public static String capitalizeMiddleCharacter(String str) {
-     int  pos;
-        int  length;
-        if(str.length() % 2 == 0) {
-            pos = str.length() / 2 - 1;
-            length = 2;
-        }
-       else {
-            pos = str.length() / 2;
-            length = 1;
-        }
-     return str.substring(pos, pos + length).toUpperCase();
+        char ch = getMiddleCharacter(str);
+        ch = Character.toUpperCase(ch);
+        return str.substring(0,str.length()/2)+ch+str.substring(str.length()/2+1);
 
     }
 
     public static String lowerCaseMiddleCharacter(String str) {
-        int  pos=0;
-        int  length=0;
-        if(str.length() % 2 == 0) {
-            pos = str.length() / 2 - 1;
-            length = 2;
-        }
-        else {
-            pos = str.length() / 2;
-            length = 1;
-        }
-        //str.substring(pos, pos + length);
-        return str.substring(0,pos)+(str.substring(pos,pos+ length).toLowerCase()+str.substring(pos + 1,str.length()));
-
-
+        char ch = getMiddleCharacter(str);
+        ch = Character.toLowerCase(ch);
+        return str.substring(0,str.length()/2)+ch+str.substring(str.length()/2+1);
 
     }
 
